@@ -1,1 +1,42 @@
-## In this project I am talking about Efficient Handwritten text recognition
+In this project I am talking about Efficient Handwritten Text Recognition Using Gated-CNN-BGRU Architecture for Diverse Applications
+
+1. Overview :        
+This project focuses on developing an advanced offline Handwritten Text Recognition (HTR) system using deep learning techniques. 
+The system transcribes cursive handwritten text into digital formats like ASCII or Unicode, enabling applications such as digitizing historical documents, automating workflows, and improving accessibility. 
+A novel architecture, GatedCNN-BGRU, is proposed to enhance recognition accuracy and efficiency, making it suitable for resource-constrained environments.
+
+2. Key Features
+Model Architecture: Combines Gated Convolutional Neural Networks (Gated-CNNs) for feature extraction and Bidirectional Gated Recurrent Units (BGRUs) for sequence modeling.
+Compact Design: Approximately 820,000 parameters, ensuring efficiency for mobile or embedded devices.
+Effective Noise Handling: Robust preprocessing techniques like deslanting, illumination compensation, and data augmentation.
+Evaluation Metrics: Character Error Rate (CER) of 9.66% and Word Error Rate (WER) of 33.68%, demonstrating promising performance.
+
+3. Applications
+Cultural Preservation: Digitizing manuscripts and historical records.
+Postal Services: Automating address recognition.
+Banking: Processing handwritten forms and cheques.
+Education: Digitizing notes and academic records.
+Healthcare: Interpreting handwritten prescriptions.
+
+4. Dataset
+The system was trained and tested on multiple datasets, including:
+
+Washington Dataset: Historical English letters.
+IAM Dataset: Diverse English handwriting samples.
+RIMES Dataset: French handwritten text.
+Saint Gall Dataset: 9th-century Latin manuscripts.
+
+5. Preprocessing
+Images were normalized, deslanted, resized (1024x128), and augmented with techniques like rotation, erosion, and noise injection. 
+Data was stored efficiently using the HDF5 format.
+
+6. Results
+CER: 9.66%
+WER: 33.68%
+SER: 57.12%
+Average processing time: 0.24 seconds per image.
+
+7. Future Enhancements
+Incorporate transformer-based language models for better contextual understanding.
+Extend support to multilingual text recognition.
+Explore paragraph-level recognition tasks.
