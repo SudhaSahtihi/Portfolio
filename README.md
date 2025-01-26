@@ -3,7 +3,7 @@
 👋 Hello! I'm **Sudha Sahithi Murikipudi**, a passionate data scientist with expertise in:
 - **Deep Learning**: Automated cell segmentation, neural networks.
 - **Machine Learning**: Customer churn prediction, regression modeling.
-- **Cloud Computing**: AWS Cloud and virtual applications.
+- **Cloud Computing**: AWS Cloud and virtual applications, GCP.
 - **Data Analysis**: Exploratory data analysis and predictive modeling.
 
 ## 📂 Featured Projects
