@@ -1,4 +1,4 @@
-# Sudha Sahithi Murikipudi's Portfolio 🎓
+# Portfolio 🎓
 
 👋 Hello! I'm **Sudha Sahithi Murikipudi**, a passionate data scientist with expertise in:
 - **Deep Learning**: Automated cell segmentation, neural networks.
