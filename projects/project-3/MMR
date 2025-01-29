@@ -1,1 +1,81 @@
+# Estimation of Maternal Mortality Rate Using Regression Analysis
 
+## Overview
+This project is part of our coursework at FSU, done by a group of 2, this aims to estimate the **Maternal Mortality Rate (MMR)** and analyze its key indicators using **regression techniques**. The objective is to build a robust predictive model that identifies significant factors influencing MMR and helps in understanding their impact.
+
+## Research Motivation
+**Maternal Mortality Rate (MMR)** represents the number of maternal deaths per **100,000 live births**. Reliable data on maternal deaths is often limited, especially in low- and middle-income countries. Using **regression models**, we aim to fill this gap by estimating MMR based on available health and demographic surveys and identifying key predictors that influence maternal mortality.
+
+## Data Description
+The dataset consists of **248 observations** collected from various sources, including **Demographic and Health Surveys (DHS)**. It includes **9 predictor variables** related to healthcare access, maternal health conditions, and socio-economic factors.
+
+### Key Variables:
+- **Response Variable:**
+  - `MMRo`: Maternal Mortality Rate (deaths per 100,000 live births)
+- **Predictor Variables:**
+  - `CPR_modern`: Contraceptive Prevalence Rate
+  - `ANC_4`: Antenatal Care Coverage
+  - `HID`: Health Institution Delivery Rate
+  - `CS`: Cesarean Section Rate
+  - `PNC`: Postnatal Care Coverage
+  - `Anemia_preg`: Prevalence of Maternal Anemia
+  - `Thin`: Prevalence of Thinness (BMI < 18.5 kg/m²)
+  - `HIV_final`: HIV Prevalence Among Women
+  - `Ht_145`: Prevalence of Maternal Stunting
+
+## Methodology
+### 1. **Exploratory Data Analysis (EDA)**
+- **Data Cleaning:** Handled missing values using median imputation.
+- **Univariate Analysis:** Assessed variable distributions and outliers.
+- **Bivariate Analysis:** Examined relationships between MMR and predictors.
+
+### 2. **Regression Modeling**
+- **Variable Selection Techniques:**
+  - Forward Selection, Backward Selection, Stepwise Selection
+  - Ridge Regression and Lasso Regression to identify key predictors.
+- **Final Model:**
+  - Selected the best-performing model based on **Adjusted R² and RMSE**.
+  - Identified four key predictors: `CPR_modern`, `HID`, `log(CS)`, `HIV_final`.
+
+### 3. **Model Diagnostics**
+- **Collinearity Check:** Verified using **Variance Inflation Factor (VIF)** and correlation plots.
+- **Assumption Testing:**
+  - **Homoscedasticity:** Checked using the **Breusch-Pagan Test**.
+  - **Normality of Errors:** Evaluated using **Q-Q plots and Shapiro-Wilk test**.
+  - **Influential Observations:** Identified and removed high-leverage points.
+
+### 4. **Model Performance Evaluation**
+- **Final Model Metrics:**
+  - **Adjusted R²:** 76.2%
+  - **RMSE:** 103.2
+  - **P-values for all predictors < 0.05**, confirming statistical significance.
+- **Validation Performance:**
+  - Tested the model on unseen data, achieving **R² = 57.2%**, indicating potential overfitting.
+
+## Results and Insights
+- **Higher contraceptive prevalence (`CPR_modern`) reduces MMR**, supporting the hypothesis that birth control improves maternal health.
+- **Health institution delivery (`HID`) lowers MMR**, highlighting the importance of professional medical care during childbirth.
+- **Cesarean section rate (`log(CS)`) has a strong relationship with MMR**, indicating the impact of surgical deliveries on maternal health.
+- **HIV prevalence (`HIV_final`) significantly influences MMR**, reinforcing the need for targeted maternal healthcare interventions.
+
+## Limitations and Future Work
+- **Limited dataset (248 observations):** Additional data from diverse regions could improve model robustness.
+- **More predictive variables:** Exploring additional socio-economic and healthcare factors could enhance the model.
+- **Validation on external datasets:** Testing on real-world maternal health records could further validate findings.
+
+## How to Run the Analysis
+1. **Load the dataset** (`mmr_data.csv`).
+2. **Run the preprocessing script** to clean data and handle missing values.
+3. **Execute regression models** using the provided scripts.
+4. **Visualize results** using statistical plots and diagnostic tests.
+5. **Evaluate the final model** based on Adjusted R² and RMSE.
+
+## Dependencies
+- Python (>=3.7)
+- Pandas, NumPy
+- Statsmodels, Scikit-learn
+- Matplotlib, Seaborn
+- SciPy
+
+## Applications
+This project provides insights into the key **healthcare and socio-economic factors** influencing maternal mortality, assisting policymakers in formulating data-driven health interventions to reduce MMR globally.
