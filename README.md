@@ -16,7 +16,7 @@
    
    _Tech Stack_: Python, Pandas, Scikit-learn, CNN's  
 
-3. **Cell Segmentation of Multiple Myeloma Plasma Cells**  
+2. **Cell Segmentation of Multiple Myeloma Plasma Cells**  
    -Contributed to developing an AI model for automatically identifying multiple myeloma plasma cells in medical images.
    
    -Utilized advanced image labeling techniques combined with machine learning to enhance the model’s performance.
@@ -25,7 +25,7 @@
   
    _Tech Stack_: Python, Pandas, Scikit-learn, Matplotlib  
 
-5. **Analyzing Maternal Mortality Trends Using Regression Models**  
+3. **Analyzing Maternal Mortality Trends Using Regression Models**  
    -Developed a mathematical model to predict Maternal Mortality Rates (MMR) using various health and social factors.
    
    -Analyzed the data to identify significant predictors of maternal mortality, applying advanced statistical techniques like regression analysis.
@@ -34,7 +34,7 @@
    
    _Tech Stack_: Linear and Logistic Regression, Statistical Analysis, Matplotlib, Hypothesis testing, R
 
-7. **Machine Learning-Driven Customer Churn Prediction for Telecom Services**  
+4. **Machine Learning-Driven Customer Churn Prediction for Telecom Services**  
    -Led the development of an AI model to predict telecom customer churn, using data to identify customers at risk of leaving.
    
    -Analyzed customer data to uncover patterns, fine-tuning the model to achieve 97.6% accuracy.
@@ -43,7 +43,7 @@
    
    _Tech Stack_: AWS, Python, Scikit-learn
 
-9. **Detecting Credit Card Fraud Using Machine Learning Models**  
+5. **Detecting Credit Card Fraud Using Machine Learning Models**  
    -Led the creation of a machine learning system to identify fraudulent credit card transactions by distinguishing between legitimate and suspicious activity.
    
    -Applied advanced machine learning techniques to train the system, fine-tuning the model for accurate fraud detection.
@@ -60,7 +60,7 @@
 -  **Libraries**: NumPy, Pandas, Tensorflow, Pytorch, Matplotlib, Seaborn
 
 
-## 📜 Certifications and Badges
+## Certifications and Badges
 - Data Science Job Simulation [British Airways, Forage]  
 - Generative AI for HealthCare [Google Cloud]  
 - Introduction to Cloud [AWS Amazon]
@@ -71,4 +71,4 @@
 ## 📞 Let's Connect!
 - [LinkedIn](https://www.linkedin.com/in/sudhasahithi/)
 - [Email](mailto:sudhasahithi2023@gmail.com)
-- [Phone](+1(448)200-7989)
+- [Phone]-+1(448)200-7989
